@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Sweet Life :: Contact</title>
+<meta charset="utf-8" />
+<meta name="description" content="This is the contact page of the business website for Sweet Life. Sweet Life is a catering company offering full food service for events and various social gatherings. Sweet Life ensures great service with meal choices for all diet types with competitive pricing." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="sweet.css" />
+</head>
+<body>
+<div id="wrapper">
+
+<nav id="top">
+	<div id="logo">
+		<a href="index.htm">
+			<img class="floatleft" src="assets/logo.gif" alt="Sweet Life: meals with a cherry on top" />
+		</a>
+		<div id="contactInfo">
+		<p class="floatright">Phone: (800) 555-5555<br />
+		Fax: (800) 555-5551<br />
+		Hours: Mon-Fri 8am-5pm<br />
+		</p>
+		</div>
+	</div>
+	
+	<div id="navLinks">
+	<ul>
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="entrees.htm">Entr&#xE9;es</a></li>
+		<li><a href="desserts.htm">Desserts</a></li>
+		<li><a href="order.htm">Order</a></li>
+		<li><a class="active">Contact</a></li>
+	</ul>
+	</div>
+</nav>
+<main>
+<div id="hero">
+	<img src="assets/chef-order.jpg" style="width: 350px; height: auto;" alt="Pork chops with gravy" />
+</div>
+
+<div id="description">
+<h1>Contact</h1>
+<p>Please send us any questions you may have about our products.</p>
+
+<p>We will try to return all correspondence within 24 hours. </p>
+
+<p>Note: Items with an asterisk (*) are required.</p>
+</div>
+
+<div id="form">
+<form class="clear" method="post" action="mailto:info@sweetlife.com">
+
+	<label for="myName">*Name:</label>
+	<input type="text" id="myName" name="myName" required="required" /><br />
+
+	<label for="myEmail">*E-mail:</label>
+	<input type="email" id="myEmail" name="myEmail" required="required" /><br />
+	
+	<label for="myPhone">*Phone:</label>
+	<input type="tel" id="myPhone" name="myPhone" required="required" /><br />
+	
+	<fieldset id="contactMethod">
+		<legend>Preferred Contact Method:</legend>
+		
+		<label for="myContE" style="display: block;">Email</label>
+		<input type="radio" id="myContE" name="myCont" style="display: inline;" /><br />
+		
+		<label for="myContP" style="display: block;">Phone</label>
+		<input type="radio" id="myContP" name="myCont" style="display: inline;" />
+		
+	</fieldset> <br /><br />
+	
+
+	<label for="commentSubmission">*Comments:</label>
+	<textarea id="commentSubmission" name="commentSubmission" required="required" rows="6" cols="28"></textarea><br />
+	<input type="submit" id="mySubmit" value="Send Now" />
+
+</form>
+</div>
+
+<br />
+<a href="#top">Back to top</a>
+
+</main>
+<footer>
+	<ul>
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="entrees.htm">Entr&#xE9;es</a></li>
+		<li><a href="desserts.htm">Desserts</a></li>
+		<li><a href="order.htm">Order</a></li>
+		<li><a>Contact</a></li>
+	</ul>
+<p>	
+Sweet Life<br />
+Phone: <span id="desktop">(800) 555-5555</span> <a id="mobile" href="tel:800-555-5555" > (800) 555-5555</a> Fax: (800) 555-5551<br />
+<a href="mailto:catering@sweetlife.com">catering@sweetlife.com</a>
+</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Sweet Life :: Order</title>
+<meta charset="utf-8" />
+<meta name="description" content="This is the order page of the business website for Sweet Life. Sweet Life is a catering company offering full food service for events and various social gatherings. Sweet Life ensures great service with meal choices for all diet types with competitive pricing." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="sweet.css" />
+</head>
+<body>
+<div id="wrapper">
+
+<nav id="top">
+	<div id="logo">
+		<a href="index.htm">
+			<img class="floatleft" src="assets/logo.gif" alt="Sweet Life: meals with a cherry on top" />
+		</a>
+		<div id="contactInfo">
+		<p class="floatright">Phone: (800) 555-5555<br />
+		Fax: (800) 555-5551<br />
+		Hours: Mon-Fri 8am-5pm<br />
+		</p>
+		</div>
+	</div>
+	
+	<div id="navLinks">
+	<ul>
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="entrees.htm">Entr&#xE9;es</a></li>
+		<li><a href="desserts.htm">Desserts</a></li>
+		<li><a class="active">Order</a></li>
+		<li><a href="contact.htm">Contact</a></li>
+	</ul>
+	</div>
+</nav>
+<main>
+
+<div id="description">
+<h1>Order</h1>
+<p>Please enter your order below.</p>
+
+<p>Feel free to make any special preparation instructions clear in the provided text area. </p>
+
+<p>In addition, please let us know your preferred method of contact by choosing either the phone or email option buttons.</p>
+
+<p>Note: Items with an asterisk (*) are required.</p>
+</div>
+
+<form method="post" action="mailto:sales@sweetlife.com">
+
+	<label for="myName">*Name:</label>
+	<input type="text" id="myName" name="myName" required="required" /><br />
+
+	<label for="myEmail">*E-mail:</label>
+	<input type="email" id="myEmail" name="myEmail" required="required" /><br />
+	
+	<label for="myPhone">*Phone:</label>
+	<input type="tel" id="myPhone" name="myPhone" required="required" /><br />
+	
+	<fieldset id="contactMethod">
+		<legend>Preferred Contact Method:</legend>
+		
+		<label for="myContE" style="display: block;">Email</label>
+		<input type="radio" id="myContE" name="myCont" style="display: inline;" /><br />
+		
+		<label for="myContP" style="display: block;">Phone</label>
+		<input type="radio" id="myContP" name="myCont" style="display: inline;" />
+		
+	</fieldset> <br />
+	
+	<fieldset id="entreeSelections">
+	<legend> Entr&#xE9;es </legend><br />
+	
+		<label for="porkChops" style="display: inline;">Pork Chops with Gravy</label>
+		<label for="porkChops" style="display: inline;"> ($8.99 per person)</label>
+		<input type="checkbox" id="porkChops" name="porkChops" style="display: inline;" />
+		
+		<br /><br />
+
+		<label for="porkQuantity" style="display: inline; float: none; text-align: right; padding-left: 6.5em;font-weight: normal;">Quantity:</label>
+		<input type="number" id="porkQuantity" name="porkQuantity" style="display: inline; float: none;" />
+		
+		<br />
+		<br />
+		
+		<label for="chicken" style="display: inline;">Barbecue Chicken </label>
+		<label for="chicken" style="display: inline;"> ($7.99 per person)</label>
+		<input type="checkbox" id="chicken" name="chicken" style="display: inline;" />
+		
+		<br />
+
+		<label for="chickenQuantity" style="display: inline; float: none; text-align: right; padding-left: 6.5em; font-weight: normal;">Quantity:</label>
+		<input type="number" id="chickenQuantity" name="chickenQuantity" style="display: inline; float: none;" />
+		
+		<br />
+		<br />
+		
+		<label for="polishSandwich" style="display: inline;">Polish Sausage Sandwich</label>
+		<label for="polishSandwich" style="display: inline;"> ($7.99 per person)</label>
+		<input type="checkbox" id="polishSandwich" name="polishSandwich" style="display: inline;" />
+		
+		<br /><br />
+
+		<label for="polishQuantity" style="display: inline; float: none; text-align: right; padding-left: 6.5em; font-weight: normal;">Quantity:</label>
+		<input type="number" id="polishQuantity" name="polishQuantity" style="display: inline; float: none;" />
+	
+	</fieldset><br />
+	
+	<fieldset id="dessertSelections">
+	<legend> Desserts </legend><br />
+	
+		<label for="bananaPudding" style="display: inline;">Banana Pudding</label>
+		<label for="bananaPudding" style="display: inline;"> ($3.99 per person)</label>
+		<input type="checkbox" id="bananaPudding" name="bananaPudding" style="display: inline;" />
+		
+		<br />
+
+		<label for="bPuddingQuantity" style="display: inline; float: none; text-align: right; padding-left: 6.5em;font-weight: normal;">Quantity:</label>
+		<input type="number" id="bPuddingQuantity" name="bPuddingQuantity" style="display: inline; float: none;" />
+		
+		<br />
+		<br />
+		
+		<label for="peachCobbler" style="display: inline;">Peach Cobbler </label>
+		<label for="peachCobbler" style="display: inline;"> ($4.99 per person)</label>
+		<input type="checkbox" id="peachCobbler" name="peachCobbler" style="display: inline;" />
+		
+		<br />
+
+		<label for="peachCobQuantity" style="display: inline; float: none; text-align: right; padding-left: 6.5em; font-weight: normal;">Quantity:</label>
+		<input type="number" id="peachCobQuantity" name="peachCobQuantity" style="display: inline; float: none;" />
+		
+		<br />
+		<br />
+		
+		<label for="sPotatoPie" style="display: inline;">Sweet Potato Pie</label>
+		<label for="sPotatoPie" style="display: inline;"> ($2.99 per person)</label>
+		<input type="checkbox" id="sPotatoPie" name="sPotatoPie" style="display: inline;" />
+		
+		<br />
+
+		<label for="sPotatoPQuantity" style="display: inline; float: none; text-align: right; padding-left: 6.5em; font-weight: normal;">Quantity:</label>
+		<input type="number" id="sPotatoPQuantity" name="sPotatoPQuantity" style="display: inline; float: none;" />
+	
+	</fieldset><br /><br />
+	
+
+	<label for="specialInstructions">Special Preparation Instructions:</label>
+	<textarea id="specialInstructions" name="specialInstructions" rows="6" cols="28"></textarea><br />
+	<input type="submit" id="mySubmit" value="Send Now" />
+
+</form>
+
+<br />
+<a href="#top">Back to top</a>
+
+</main>
+<footer>
+	<ul>
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="entrees.htm">Entr&#xE9;es</a></li>
+		<li><a href="desserts.htm">Desserts</a></li>
+		<li><a>Order</a></li>
+		<li><a href="contact.htm">Contact</a></li>
+	</ul>
+<p>	
+Sweet Life<br />
+Phone: <span id="desktop">(800) 555-5555</span> <a id="mobile" href="tel:800-555-5555" > (800) 555-5555</a> Fax: (800) 555-5551<br />
+<a href="mailto:catering@sweetlife.com">catering@sweetlife.com</a>
+</p>
+</footer>
+</div>
+</body>
+</html>
